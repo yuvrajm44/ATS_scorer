@@ -1,0 +1,17 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Keep model files binary (no line ending conversion)
+*.bin binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.pb binary
+
+# Keep these specific files with LF endings
+sentence_transformer_model/* text eol=lf
+pre-trained-ner-mode/* text eol=lf
+
+# JSON and text files in model directories should keep LF
+*.json text eol=lf
+*.txt text eol=lf
